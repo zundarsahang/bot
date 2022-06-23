@@ -633,6 +633,5 @@ async def on_reaction_add(reaction, users):
                    Text = Text + "\n" + str(i + 1) + ". " + str(musictitle[i])
                    await reaction.message.channel.send(embed = discord.Embed(title= "노래목록", description = Text.strip(), color = 0x00ff00))
 
-
-access_token = os.environ["BOT_TIKEN"]
+access_token = osenviron['BOT_TOKEN']
 bot.run(access_token)
