@@ -634,5 +634,5 @@ async def on_reaction_add(reaction, users):
                    await reaction.message.channel.send(embed = discord.Embed(title= "노래목록", description = Text.strip(), color = 0x00ff00))
 
 
-
-bot.run('OTI1MjYzNDM1NDM5MTQ0OTkw.YcqkuQ.PWWfK_k8G41NYqBdtXZznv1AWME')
+access_token = os.environ["BOT_TIKEN"]
+bot.run(access_token)
